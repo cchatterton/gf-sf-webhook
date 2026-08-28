@@ -2,6 +2,10 @@
 
 All notable changes to GF SF Webhook are recorded here.
 
+## 1.1.2 - 2026-08-28
+
+- Fixed multi-checkbox payload handling so selections after Gravity Forms' skipped input IDs, including the final choice, are included.
+
 ## 1.1.1 - 2026-08-28
 
 - Aligned plugin metadata, licensing, documentation, packaging, and GitHub update delivery with AlphaSys standards.

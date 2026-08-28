@@ -3,7 +3,7 @@ Contributors: alphasys
 Tags: gravity forms, salesforce, webhook, integration
 Requires at least: 6.0
 Tested up to: 7.1
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 Requires PHP: 8.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -36,6 +36,10 @@ The plugin sends the Gravity Forms entry ID, form ID, and mapped submission valu
 The plugin checks public release metadata hosted by GitHub to provide native WordPress updates. These requests include the site's IP address as part of normal internet communication and a user-agent containing the plugin version. No form submission data is sent to GitHub. GitHub terms: https://docs.github.com/en/site-policy/github-terms/github-terms-of-service. GitHub privacy statement: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement.
 
 == Changelog ==
+
+= 1.1.2 - 2026-08-28 =
+
+* Fixed multi-checkbox payload handling so selections after Gravity Forms' skipped input IDs, including the final choice, are included.
 
 = 1.1.1 - 2026-08-28 =
 

@@ -47,16 +47,20 @@ function gfsf_build_payload( $entry, $form ) {
 
 		/*
 		|--------------------------------------------------------------------------
-		| Checkbox fields → array of selected labels
+		| Checkbox fields → array of selected values
 		|--------------------------------------------------------------------------
 		*/
-		if ( isset( $field->type ) && $field->type === 'checkbox' && ! empty( $field->choices ) ) {
+		if ( isset( $field->type ) && 'checkbox' === $field->type && ! empty( $field->inputs ) && is_array( $field->inputs ) ) {
 
 			$selected = array();
 
-			foreach ( $field->choices as $choice_index => $choice ) {
+			foreach ( $field->inputs as $input ) {
 
-				$input_id = $field->id . '.' . ( $choice_index + 1 );
+				$input_id = isset( $input['id'] ) ? (string) $input['id'] : '';
+
+				if ( '' === $input_id ) {
+					continue;
+				}
 
 				$value = rgar( $entry, $input_id );
 

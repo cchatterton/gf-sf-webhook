@@ -29,6 +29,10 @@ GF SF Webhook is an AlphaSys WordPress plugin that sends mapped Gravity Forms su
 
 Run `scripts/build-plugin-zip.sh` from any directory. It creates both `dist/gf-sf-webhook.zip` and the committed root `gf-sf-webhook.zip`.
 
+## Tests
+
+Run the checkbox payload regression check with `php tests/payload-checkbox.php`.
+
 ## External services
 
 Submission data is sent to the webhook URL configured by a site administrator. When that URL is a Salesforce endpoint, Salesforce's terms and privacy policy apply. The updater checks public files and release metadata hosted by GitHub. See the packaged `readme.txt` for full disclosure.
