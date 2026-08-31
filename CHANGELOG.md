@@ -2,6 +2,10 @@
 
 All notable changes to GF SF Webhook are recorded here.
 
+## 1.1.3 - 2026-08-31
+
+- Fixed Time fields being omitted when Gravity Forms stores the submitted time against the main field ID rather than separate sub-input IDs.
+
 ## 1.1.2 - 2026-08-28
 
 - Fixed multi-checkbox payload handling so selections after Gravity Forms' skipped input IDs, including the final choice, are included.

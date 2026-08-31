@@ -2,7 +2,7 @@
 /**
  * Plugin Name: GF SF Webhook
  * Description: Sends mapped Gravity Forms submissions to a configured Salesforce webhook.
- * Version: 1.1.2
+ * Version: 1.1.3
  * Requires at least: 6.0
  * Requires PHP: 8.1
  * Update URI: https://github.com/cchatterton/gf-sf-webhook
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'GFSF_VERSION', '1.1.2' );
+define( 'GFSF_VERSION', '1.1.3' );
 define( 'GFSF_PLUGIN_FILE', __FILE__ );
 define( 'GFSF_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 

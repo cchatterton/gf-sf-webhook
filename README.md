@@ -31,7 +31,7 @@ Run `scripts/build-plugin-zip.sh` from any directory. It creates both `dist/gf-s
 
 ## Tests
 
-Run the checkbox payload regression check with `php tests/payload-checkbox.php`.
+Run the payload regression checks with `php tests/payload-checkbox.php` and `php tests/payload-time.php`.
 
 ## External services
 

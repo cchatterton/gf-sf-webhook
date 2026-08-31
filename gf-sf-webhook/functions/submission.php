@@ -110,9 +110,8 @@ function gfsf_build_payload( $entry, $form ) {
 
 			if ( ! empty( $sub_payload ) ) {
 				$payload[ $key ] = $sub_payload;
+				continue;
 			}
-
-			continue;
 		}
 
 		/*
