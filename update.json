@@ -1,4 +1,6 @@
 {
-  "version": "1.1.3",
-  "body": "Fixed Time fields being omitted from webhook payloads when Gravity Forms stores the submitted time against the main field ID."
+  "version": "1.1.4",
+  "body": "## 1.1.4 - 2026-09-26\n\n- Replace independent GitHub updater with the guarded AlphaSys controller client.\n- Standardise metadata, links, licensing and WordPress 7.0 / PHP 7.4 compatibility.\n- Preserve existing functionality, settings, hooks and package identity.\n\nAll notable changes to GF SF Webhook are recorded here.\n",
+  "requires": "7.0",
+  "requires_php": "7.4"
 }
