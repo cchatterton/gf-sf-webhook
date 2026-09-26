@@ -2,9 +2,10 @@
 /**
  * Plugin Name: GF SF Webhook
  * Description: Sends mapped Gravity Forms submissions to a configured Salesforce webhook.
- * Version: 1.1.3
- * Requires at least: 6.0
- * Requires PHP: 8.1
+ * Version: 1.1.4
+ * Requires at least: 7.0
+ * Requires PHP: 7.4
+ * AlphaSys Controller API: 1
  * Update URI: https://github.com/cchatterton/gf-sf-webhook
  * Author: AlphaSys
  * Author URI: https://alphasys.com.au
@@ -17,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'GFSF_VERSION', '1.1.3' );
+define( 'GFSF_VERSION', '1.1.4' );
 define( 'GFSF_PLUGIN_FILE', __FILE__ );
 define( 'GFSF_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
@@ -25,4 +26,6 @@ require_once GFSF_PLUGIN_DIR . 'functions/settings.php';
 require_once GFSF_PLUGIN_DIR . 'functions/submission.php';
 require_once GFSF_PLUGIN_DIR . 'functions/webhook.php';
 require_once GFSF_PLUGIN_DIR . 'functions/resend.php';
-require_once GFSF_PLUGIN_DIR . 'functions/github-updater.php';
+
+require_once __DIR__ . '/functions/controller-client.php';
+asuc_client_register(__FILE__, 'gf-sf-webhook');
